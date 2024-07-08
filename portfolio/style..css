@@ -1,29 +1,29 @@
-/* General styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #121212; /* Dark theme background */
-    color: #ffffff; /* Text color */
-    scroll-behavior: smooth; /* Smooth scrolling */
+    background-color: #121212;
+    /* Dark theme background */
+    color: #ffffff;
+    /* Text color */
+    scroll-behavior: smooth;
+    /* Smooth scrolling */
 }
 
 /* Header Section */
 header {
-    background-color: #1f1f1f; /* Darker background for the header */
+    background-color: #1f1f1f;
+    /* Darker background for the header */
     padding: 1rem 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Slight shadow for depth */
     top: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 1000; /* Ensure header stays on top */
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
@@ -32,7 +32,8 @@ header {
 .nav-left p {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ff6347; /* Highlight color */
+    color: #ff6347;
+    /* Highlight color */
 }
 
 .nav-right ul {
@@ -52,7 +53,8 @@ header {
     font-weight: 500;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transitions */
 }
 
 .nav-right ul li a:hover {
@@ -66,15 +68,15 @@ header {
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 5rem auto 2rem; /* Adjusted margin for spacing */
+    margin: 2rem auto;
     padding: 0 1rem;
 }
 
 .left-sec {
     flex: 1;
-    color: #d3d3d3; /* Slightly lighter text for contrast */
+    color: #d3d3d3;
+    /* Slightly lighter text for contrast */
     font-size: 2.5rem;
-    text-align: center; /* Center align text */
 }
 
 .name-color {
@@ -83,7 +85,6 @@ header {
 
 .btns-container {
     margin-top: 1rem;
-    text-align: center; /* Center align buttons */
 }
 
 .resume-btn,
@@ -95,13 +96,15 @@ header {
     margin-right: 0.5rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .resume-btn:hover,
 .github-btn:hover {
-    background-color: #e5533d; /* Darker shade on hover */
-    transform: scale(1.05); /* Slightly larger on hover */
+    background-color: #e5533d;
+    /* Darker shade on hover */
+    transform: scale(1.05);
+    /* Slightly larger on hover */
 }
 
 .right-sec .img-main {
@@ -113,7 +116,8 @@ header {
 }
 
 .right-sec .img-main:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05);
+    /* Slight zoom on hover */
 }
 
 /* About Section */
@@ -122,31 +126,53 @@ header {
     background-color: #1f1f1f;
 }
 
+.Section-two>div {
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.Section-three>div {
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.Section-four>div {
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.Section-five>div {
+    margin-left: 100px;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
 .About-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start; /* Adjust alignment */
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .About-left,
 .About-right {
-    flex: 1 1 50%; /* Adjusted width for smaller screens */
+    flex: 1;
     padding: 1rem;
 }
 
 .About-left img {
     width: 100%;
-    max-width: 100%; /* Ensure image doesn't overflow */
+    max-width: 400px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
 }
 
 .About-left img:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05);
+    /* Slight zoom on hover */
 }
 
 .About-right {
@@ -183,7 +209,7 @@ header {
 }
 
 .skill {
-    flex: 1 1 50%; /* Adjusted width for smaller screens */
+    flex: 1 1 100px;
     text-align: center;
     margin: 1rem;
 }
@@ -292,7 +318,7 @@ header {
     padding: 0.7rem 1.5rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .contact-form button:hover {
@@ -327,72 +353,4 @@ footer {
 
 .footer-bottom {
     margin-top: 1rem;
-}
-
-/* Media Queries for Responsive Design */
-
-/* For small screens (phones, 576px and below) */
-@media only screen and (max-width: 576px) {
-    .nav-left p {
-        font-size: 1.2rem;
-    }
-    .nav-right ul {
-        display: none; /* Hide navigation links */
-    }
-    .Container-top {
-        flex-direction: column;
-        align-items: center; /* Center align items */
-        margin: 3rem auto 1rem; /* Adjusted margin for spacing */
-    }
-    .left-sec {
-        font-size: 2rem;
-        text-align: center; /* Center align text */
-    }
-    .right-sec .img-main {
-        max-width: 100%;
-    }
-    .About-container {
-        flex-direction: column;
-        align-items: center; /* Center align items */
-    }
-    .About-left,
-    .About-right {
-        width: 100%;
-        margin: 0;
-    }
-    .About-left img {
-        max-width: 100%;
-    }
-    .About-right {
-        margin-top: 1rem;
-        padding: 1rem; /* Added padding for spacing */
-    }
-}
-
-/* For medium screens (tablets, 768px and below) */
-@media only screen and (max-width: 768px) {
-    .nav-left p {
-        font-size: 1.2rem;
-    }
-    .left-sec {
-        font-size: 2rem;
-    }
-    .resume-btn,
-    .github-btn {
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem;
-    }
-}
-
-/* For large screens (desktops, 992px and above) */
-@media only screen and (min-width: 992px) {
-    .nav-right ul {
-        display: flex; /* Restore navigation links */
-    }
-    .nav-left p {
-        font-size: 1.8rem;
-    }
-    .left-sec {
-        font-size: 3rem;
-    }
 }
