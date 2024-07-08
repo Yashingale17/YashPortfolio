@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style..css">
+    <title>Yash Ingale Portfolio</title>
+</head>
+
+<body id="top">
+    <header>
+        <div class="header-container">
+            <nav>
+                <div class="nav-left">
+                    <p>Yash's Portfolio</p>
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="Container-top">
+            <div class="left-sec">
+                Hi, I am <span class="name-color">Yash</span>
+                <div>and I am a frontend</div>
+                <span id="element"></span>
+                <div class="btns-container">
+                    <a href="./Resume/Yash Ingale.pdf" download="Yash Ingale.pdf" style="text-decoration: none;">
+                        <button class="resume-btn">Download Resume</button>
+                    </a>
+
+                    <a href="https://github.com/Yashingale17" target="_blank" style="text-decoration: none;">
+                        <button class="github-btn">GitHub</button>
+                    </a>
+                </div>
+            </div>
+            <div class="right-sec">
+                <img class="img-main" src="./images/1649524.webp" alt="">
+            </div>
+        </section>
+        <hr>
+        <section id="about" class="Section-two">
+            <div>About Me</div>
+            <div class="About-container">
+                <div class="About-left"><img src="./images/front-end-developer.png" alt=""></div>
+                <div class="About-right">
+                    <p>Hi, I'm <strong>Yash Ingale</strong>, a front-end web developer. I love creating websites that are
+                        both beautiful and easy to use. I have a strong foundation in HTML, CSS, and JavaScript, and I'm
+                        currently learning React and Bootstrap.</p>
+                    <p>As a recent graduate, I've worked on several projects that helped me develop my skills. I enjoy
+                        solving problems and coming up with creative solutions to make websites work better.</p>
+                    <p>I'm excited to join a team where I can continue to grow and work on interesting projects. When I'm
+                        not coding, I like to learn about new design trends and work on personal projects.</p>
+                    <p>Let's connect and build something great together!</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <section id="skills" class="Section-three">
+            <div>Skills</div>
+            <div class="Skill-Container">
+                <div class="skill"><i class="fa-brands fa-html5"></i>
+                    <div class="Skill-title">HTML</div>
+                </div>
+                <div class="skill"><i class="fa-brands fa-css3-alt"></i>
+                    <div class="Skill-title">CSS</div>
+                </div>
+                <div class="skill"><i class="fa-brands fa-js"></i>
+                    <div class="Skill-title">JS</div>
+                </div>
+                <div class="skill"><i class="fa-brands fa-react"></i>
+                    <div class="Skill-title">React</div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <section id="project" class="Section-four">
+            <div>Projects</div>
+        </section>
+
+        <hr>
+        <section id="contact" class="Section-five">
+            <div>Contact</div>
+            <div class="container-contact">
+                <div class="contact-link">
+                    <div>
+                        <i class="fa-brands fa-instagram"></i>
+                        <a class="link-title" href="https://www.instagram.com/_yash_17_sahil/" target="_blank">Instagram</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <a class="link-title" href="https://www.linkedin.com/in/yashingale17"
+                            target="_blank"><span>LinkedIn</span></a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-git"></i>
+                        <a class="link-title" href="https://github.com/Yashingale17" target="_blank">GitHub</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <a class="link-title" href="https://x.com/IngaleYash36030" target="_blank">Twitter</a>
+                    </div>
+                </div>
+                <div class="main-container">
+                    <div class="contact-container">
+                        <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="14723e7f-93f9-4da3-9d3a-c1141bbfcd0c">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+
+                            <button type="submit">Contact Us</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section contact">
+                <p>Email: <a href="mailto:sahilingale329@gmail.com">sahilingale329@gmail.com</a></p>
+                <p>Phone: (+91) 9372017274</p>
+            </div>
+            <div class="footer-section back-to-top">
+                <a href="#top" id="back-to-top">Back to top</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Yash's Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer'],
+            typeSpeed: 50,
+        });
+
+        // JavaScript for smooth scrolling
+        document.querySelector('#back-to-top').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+    
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent default form submission
+    
+                // Fetch form data
+                const formData = new FormData(contactForm);
+                const name = formData.get('name');
+                const email = formData.get('email');
+                const message = formData.get('message');
+    
+                // Example using fetch API to submit form data to external service
+                fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data); // Log server response
+                    alert('Form submied successfully!'); // Example of a success message
+                    contactForm.reset(); // Reset form fields
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error submitting form. Please try again.'); // Example of an error message
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
