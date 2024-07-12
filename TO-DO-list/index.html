@@ -9,22 +9,22 @@
 </head>
 <body>
     <div class="container">
-        <h2 style="text-align: center; margin-top: 20px">TO-DO-LIST</h2>
+        <!-- Title of the To-Do List -->
+        <h2>TO-DO-LIST</h2>
+        
+        <!-- Input section for adding tasks -->
         <div class="input">
-            <input type="text" name="" id="" placeholder="Add Task">
-            <button class="add">Add</button>
+            <input type="text" name="input-task" id="input-task" placeholder="Add Task">
+            <button class="add" onclick="addTask()">Add</button>
         </div>
+
+        <!-- Container to hold all tasks -->
         <div class="task-container">
-            <div class="task-manager">
-                First Task
-                <div class="delete-comp">
-                    <input class="check-box" type="checkbox" name="" id="">
-                    <i style="cursor:pointer" class="fa-solid fa-trash-can"></i>
-                </div>
+            <div class="task-manager" id="task-manager">
+                <!-- Tasks will be dynamically added here -->
             </div>
         </div>
-        
     </div>
-    <Script src="Script.js"></Script>
+    <script src="script.js"></script>
 </body>
 </html>
