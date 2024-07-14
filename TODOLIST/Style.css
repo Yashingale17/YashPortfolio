@@ -12,12 +12,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #240750;
+    background-color: #1e1e1e;
 }
 
 /* Main container styling */
 .container {
-    background-color: #006769;
+    background-color: #2e2e2e;
     height: 600px;
     width: 460px;
     margin-top: 80px;
@@ -29,7 +29,7 @@ body {
 /* Title styling */
 h2 {
     text-align: center;
-    color: white;
+    color: #e0e0e0;
     margin-bottom: 20px;
 }
 
@@ -43,22 +43,37 @@ h2 {
 input[type="text"] {
     padding: 6px 10px;
     border-radius: 4px;
-    border: none;
+    border: 1px solid #3e3e3e;
     height: 40px;
     width: 260px;
-    margin-right: 10px;
+    margin-right: 5px;
     font-weight: bold;
     outline: none;
+    background-color: #3e3e3e;
+    color: #ffffff;
 }
 
 /* Add button styling */
 button.add {
     height: 40px;
-    width: 85px;
+    width: 70px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 5px;
+    font-weight: bold;
+    background-color: #1abc9c;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease-in, transform 0.3s ease-in;
+}
+
+button.clear-all {
+    height: 40px;
+    width: 70px;
     border-radius: 4px;
     border: none;
     font-weight: bold;
-    background-color: #40A578;
+    background-color: #1abc9c;
     cursor: pointer;
     color: white;
     transition: background-color 0.3s ease-in, transform 0.3s ease-in;
@@ -66,13 +81,17 @@ button.add {
 
 /* Add button hover effect */
 button.add:hover {
-    background-color: #6fe6b1;
+    background-color: #16a085;
+    transform: scale(1.05);
+}
+button.clear-all:hover {
+    background-color: #16a085;
     transform: scale(1.05);
 }
 
 /* Task container styling */
 .task-container {
-    background-color: #40A578;
+    background-color: #333333;
     padding: 20px;
     border-radius: 10px;
     height: 420px;
@@ -80,9 +99,8 @@ button.add:hover {
 }
 
 .task-manager .task-box {
-    background-color: purple;
-    color: wheat;
-    height: 34px;
+    background-color: #444444;
+    height: 38px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -91,23 +109,27 @@ button.add:hover {
     padding: 12px;
 }
 
-
 /* Initially hidden task manager */
 .task-manager {
     visibility: hidden;
 }
 
-/* Individual task box styling */
-.task-box {
-    background-color: #9DDE8B;
-    padding: 10px;
-    border-radius: 10px;
+.task-box input[type="checkbox"] {
+    margin-right: 8px;
+    background-color: #1abc9c;
+    transform: scale(1.1);
+}
+
+.task-box i {
+    color: white;
+    width: 26px;
+    height: 26px;
     display: flex;
-    justify-content: space-between;
+    border-radius: 4px;
+    justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: black;
+    background-color: #e74c3c;
+    cursor: pointer;
 }
 
 /* Task list item styling */
@@ -116,6 +138,8 @@ button.add:hover {
     margin: 0;
     padding: 0;
     flex-grow: 1;
+    color: #e0e0e0;
+    font-size: large;
 }
 
 /* Checkbox container styling */
@@ -124,13 +148,3 @@ button.add:hover {
     align-items: center;
 }
 
-/* Checkbox styling */
-.check-box {
-    margin-right: 10px;
-}
-
-/* Delete button icon styling */
-.fa-trash-can {
-    cursor: pointer;
-    color: black;
-}
