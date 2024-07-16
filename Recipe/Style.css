@@ -77,3 +77,86 @@
     font-size: 18px;
     color: #aaa;
 }
+
+.main-container {
+    background-color: black;
+    height: 460px;
+}
+
+.footer-container {
+    background-color: rgb(166, 155, 155);
+    height: 340px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 6px 0 4px;
+}
+
+.left-footer {
+    background-color: blue;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: start;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: green;
+}
+
+.contact-form h3 {
+    font-size: 2rem;
+}
+.input-fields {
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+    height: 30px;
+    width: 400px;
+}
+
+.textArea {
+    height: 80px;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.contact-btn {
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+}
+
+.social-link-container {
+    background-color: blue;
+    margin-left: 20px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-link-container a,p {
+    text-decoration: none;
+    color: black;
+    margin-left: 100px;
+}
+
+.right-footer {
+    background-color: lightblue;
+    width: 40%;
+}
+
