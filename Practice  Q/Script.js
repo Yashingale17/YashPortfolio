@@ -158,148 +158,276 @@
 // controle strecture or flow controle or statements
 
 // check if number is positive or negative 
-let a = 6;
-if (a > 0 || a === 0) {
-    console.log("Positive");
-} else {
-    console.log("Negative");
-}
+// let a = 6;
+// if (a > 0 || a === 0) {
+//     console.log("Positive");
+// } else {
+//     console.log("Negative");
+// }
 
 
 // if a person is eligible to vote ;
 
-let persongAge = 17;
-if (persongAge >= 18) {
-    console.log("person is elagible to vote");
-} else {
-    console.log("person is underAge to vote");
+// let persongAge = 17;
+// if (persongAge >= 18) {
+//     console.log("person is elagible to vote");
+// } else {
+//     console.log("person is underAge to vote");
+// }
+
+// const num = 6
+// switch (num) {
+//     case 1:
+//         console.log('Jan')
+//         break;
+//     case 2:
+//         console.log("fab");
+//         break;
+//     case 3:
+//         console.log("March");
+//         break;
+//     case 4:
+//         console.log("April");
+//         break;
+//     case 5:
+//         console.log("May");
+//         break;
+//     case 6:
+//         console.log("Jun");
+//         break;
+//     case 7:
+//         console.log("July");
+//         break;
+//     case 8:
+//         console.log("August");
+//         break;
+//     case 9:
+//         console.log("seo");
+//         break;
+//     case 10:
+//         console.log("Oct");
+//         break;
+//     case 11:
+//         console.log("Nov");
+//         break;
+//     case 12:
+//         console.log("Dec");
+//         break;
+//     default:
+//         break;
+// }
+
+
+// let score = 98;
+// switch (true) {   // here the key is a boolean value because booleam value compaers the below case statemanet if it's true then it executes the true case other wise it moves to other cases 
+//     // why we cannot use score in key here becaue score cannot compareed directly to case's score as it is a condition os to compare the condition we need boolean value
+//     case score >= 80:
+//         console.log('A Grade')
+//         break;
+//     case score >= 75 && score <= 79:
+//         console.log("B Grade");
+//         break;
+//     case score >= 50 && score <= 74:
+//         console.log("B Grade");
+//         break;
+//     case score >= 35 && score <= 49:
+//         console.log("D Grade");
+//         break;
+//     case score < 35:
+//         console.log("Fail");
+//         break;
+//     default:
+//         break;
+// }
+
+// let evenORdd = 5;
+// console.log(evenORdd % 2 === 0 ? 'even Num' : ' odd Num')
+
+
+// let year = 2029;
+
+// if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+//     console.log("Leap Year")
+// } else {
+//     console.log("Not a leap Year");
+// }
+
+// let year2 = 2029;
+
+// if (year2 % 4 === 0 || (year2 % 100 !== 0 && year2 % 400 === 0)) {
+//     console.log("Leap Year");
+// } else {
+//     console.log("Not a leap Year");
+// }
+
+
+// let checkNum = -1;
+// if (checkNum > 0) {
+//     console.log("Positive");
+// } else if (checkNum < 0) {
+//     console.log("Negative");
+// } else {
+//     console.log('Its ZERO');
+// }
+
+// let Mark = 56;
+
+// switch (true) {
+//     case (Mark > 80):
+//         console.log("A");
+//         break;
+
+//     case (Mark >= 75 && Mark <= 79):
+//         console.log("B");
+//         break;
+//     case (Mark >= 60 && Mark <= 74):
+//         console.log("C");
+//         break;
+//     case (Mark >= 40 && Mark <= 59):
+//         console.log("D");
+//         break;
+//     case (Mark >= 35 && Mark <= 39):
+//         console.log("E");
+//         break;
+//     default:
+//         console.log("Fail!!!")
+//         break;
+// }
+
+
+
+// let leapyear = 2040;
+
+// if ((leapyear % 4 === 0 && leapyear % 100 !== 0) || leapyear %400 === 0) {
+//     console.log("Year is a Leap");
+// }else {
+//     console.log("Year is Not a leap Year");
+// }
+
+
+// day 4 
+
+// Loops 
+
+// i = 1;
+// for (let i = 1; i <=10; i++) {
+//     console.log(i);  
+// }
+
+// for (let i = 1 ; i <= 10 ; i++) {
+//     const result = 5 * i;
+//     console.log(`5 x ${i} = ${result}`);
+// }
+
+// num = 1;
+// sum = 0 ;
+// while (num <=10) {
+//     sum += num;
+//     num++;
+// }
+// console.log(sum);
+
+
+// num = 10 ;
+
+// while (num >= 0) {
+//     console.log(num)
+//     num--
+// }
+
+
+// no = 1 ;
+// do {
+//     console.log(no)
+//     no++
+// }while (no <= 5);
+
+// num = 5;
+// fact = 1;
+// i = 1;
+
+// do {
+//     fact = fact * i ;
+//     i++;
+// }while (i <= num);
+// console.log(fact)
+
+
+
+// let line = 5 ;
+// for (i = 1; i <=line ; i++) {
+//     let stars = '';
+    
+//     for (j = 1; j<=i ; j++) {
+//         stars += '* '
+//     }
+//     console.log(stars)
+// }
+
+
+
+// let linesss = 7;
+// for (let i = 1; i <=linesss; i++) {
+//     let star = ''; 
+//     for (let j = 1; j <=i; j++){
+//         star = star + "* "
+//     }
+//     console.log(star)
+// }
+
+
+
+// for (i= 1; i<=10 ; i++) {
+//     if(i === 5) {
+//         continue
+//     }
+//     console.log(i)
+// }
+
+// for (let i = 1; i<=10;i++){
+//     console.log(i)
+//     if(i===7) {
+//         break
+//     }
+// }
+
+let num = 1;
+for (num = 1 ; num<=10 ; num++){
+    console.log(num)
 }
 
-const num = 6
-switch (num) {
-    case 1:
-        console.log('Jan')
-        break;
-    case 2:
-        console.log("fab");
-        break;
-    case 3:
-        console.log("March");
-        break;
-    case 4:
-        console.log("April");
-        break;
-    case 5:
-        console.log("May");
-        break;
-    case 6:
-        console.log("Jun");
-        break;
-    case 7:
-        console.log("July");
-        break;
-    case 8:
-        console.log("August");
-        break;
-    case 9:
-        console.log("seo");
-        break;
-    case 10:
-        console.log("Oct");
-        break;
-    case 11:
-        console.log("Nov");
-        break;
-    case 12:
-        console.log("Dec");
-        break;
-    default:
-        break;
+let a = 1
+while (a <=10) {
+    console.log(a)
+    a++
 }
 
 
-let score = 98;
-switch (true) {   // here the key is a boolean value because booleam value compaers the below case statemanet if it's true then it executes the true case other wise it moves to other cases 
-    // why we cannot use score in key here becaue score cannot compareed directly to case's score as it is a condition os to compare the condition we need boolean value
-    case score >= 80:
-        console.log('A Grade')
-        break;
-    case score >= 75 && score <= 79:
-        console.log("B Grade");
-        break;
-    case score >= 50 && score <= 74:
-        console.log("B Grade");
-        break;
-    case score >= 35 && score <= 49:
-        console.log("D Grade");
-        break;
-    case score < 35:
-        console.log("Fail");
-        break;
-    default:
-        break;
+for(let multi = 1; multi<=10 ; multi++) {
+    let result = multi * 5;
+    console.log(`5 x ${multi} = ${result}`)
 }
 
-let evenORdd = 5;
-console.log(evenORdd % 2 === 0 ? 'even Num' : ' odd Num')
-
-
-let year = 2029;
-
-if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
-    console.log("Leap Year")
-} else {
-    console.log("Not a leap Year");
+for (s = 1 ; s <=10; s++) {
+    let result = 17 * s;
+    console.log(`7 x ${s} = ${result}`)
 }
 
-let year2 = 2029;
-
-if (year2 % 4 === 0 || (year2 % 100 !== 0 && year2 % 400 === 0)) {
-    console.log("Leap Year");
-} else {
-    console.log("Not a leap Year");
+summ = 0
+let i = 1
+while (i <=10) {
+    summ += i;
+    i++
 }
+console.log(summ)
 
 
-let checkNum = -1;
-if (checkNum > 0) {
-    console.log("Positive");
-} else if (checkNum < 0) {
-    console.log("Negative");
-} else {
-    console.log('Its ZERO');
-}
+let numOf = 10;
+ factroal = 1;
+ noo = 1
 
-let Mark = 56;
-
-switch (true) {
-    case (Mark > 80):
-        console.log("A");
-        break;
-
-    case (Mark >= 75 && Mark <= 79):
-        console.log("B");
-        break;
-    case (Mark >= 60 && Mark <= 74):
-        console.log("C");
-        break;
-    case (Mark >= 40 && Mark <= 59):
-        console.log("D");
-        break;
-    case (Mark >= 35 && Mark <= 39):
-        console.log("E");
-        break;
-    default:
-        console.log("Fail!!!")
-        break;
-}
-
-
-
-let leapyear = 2040;
-
-if ((leapyear % 4 === 0 && leapyear % 100 !== 0) || leapyear %400 === 0) {
-    console.log("Year is a Leap");
-}else {
-    console.log("Year is Not a leap Year");
-}
+do {
+    factroal = factroal * noo;
+    noo++
+} while (noo <= numOf);
+console.log(factroal);
