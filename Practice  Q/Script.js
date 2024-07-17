@@ -391,43 +391,202 @@
 //     }
 // }
 
-let num = 1;
-for (num = 1 ; num<=10 ; num++){
-    console.log(num)
+// let num = 1;
+// for (num = 1 ; num<=10 ; num++){
+//     console.log(num)
+// }
+
+// let a = 1
+// while (a <=10) {
+//     console.log(a)
+//     a++
+// }
+
+
+// for(let multi = 1; multi<=10 ; multi++) {
+//     let result = multi * 5;
+//     console.log(`5 x ${multi} = ${result}`)
+// }
+
+// for (s = 1 ; s <=10; s++) {
+//     let result = 17 * s;
+//     console.log(`7 x ${s} = ${result}`)
+// }
+
+// summ = 0
+// let i = 1
+// while (i <=10) {
+//     summ += i;
+//     i++
+// }
+// console.log(summ)
+
+
+// let numOf = 10;
+//  factroal = 1;
+//  noo = 1
+
+// do {
+//     factroal = factroal * noo;
+//     noo++
+// } while (noo <= numOf);
+// console.log(factroal);
+
+
+// Day 5 
+
+// Functions..
+
+// function evenOdd () {
+
+//     if (num % 2 === 0 ) {
+//         console.log("Even")
+//     }else{
+//         console.log("Odd")
+//     } 
+// }
+// evenOdd(num=5);
+
+
+// function squareFun () {
+//     let Numm = 5
+//     let output = Numm * Numm
+//     console.log(output)
+// }
+// squareFun()
+
+
+// let maxNum = function (num1 , num2) {
+//     if (num1 > num2) {
+//         console.log(num1)
+//     }else {
+//         console.log(num2)
+//     }
+// }
+// num1 = 15;
+// num2 = 14;
+// maxNum(num1 , num2)
+
+// const maxNum2 = function (a,b) {
+//    return (a > b) ? a : b;
+// }
+// let b = 30;
+// let a = 40;
+// console.log(maxNum2(a,b))
+
+
+// let concatfun = function (str1, str2) {
+//     return str1.concat(" " + str2)
+// }
+// str1 = "Hello";
+// str2 = "World";
+// console.log(concatfun(str1, str2))
+
+// const ArroFUn = (add1 , add2) => {
+//     return add1 + add2
+// };
+// add1 = 5;
+// add2 = 7;
+// console.log(ArroFUn(add1 ,add2))
+
+
+// const findStr = (strFind) => {
+//     if (strFind.includes("sa")) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// strFind = "sahil";
+// console.log(findStr(strFind))
+
+
+let  product = (a ,b = 5) => {
+    return a * b;
 }
 
-let a = 1
-while (a <=10) {
-    console.log(a)
-    a++
+a = 5;
+console.log(product(a));
+
+
+const greet = (Name, age = 21) => {
+    return `hello how are you ${Name}`
+}
+Name = "Yash";
+console.log(greet(Name))
+
+
+
+let  howNo = (func , n) =>  {
+    for(let i = 0; i <n ; i++) {
+        func();
+    }
 }
 
+function gree () {
+    console.log("Hello!!!");
+}
+howNo(gree , 3)
 
-for(let multi = 1; multi<=10 ; multi++) {
-    let result = multi * 5;
-    console.log(`5 x ${multi} = ${result}`)
+
+
+// Define the first function: doubles the value
+function double(x) {
+    return x * 2;
 }
 
-for (s = 1 ; s <=10; s++) {
-    let result = 17 * s;
-    console.log(`7 x ${s} = ${result}`)
+// Define the second function: squares the value
+function square(x) {
+    return x * x;
 }
 
-summ = 0
-let i = 1
-while (i <=10) {
-    summ += i;
-    i++
+let highor = (fun1 , fun2 , Val) => {
+    let result = fun1(Val)
+    let result2 = fun2(result)
+    return result2
 }
-console.log(summ)
+console.log(highor(double , square , 5))
 
 
-let numOf = 10;
- factroal = 1;
- noo = 1
+function evenOdd (num)  {
+    if (num % 2 === 0) {
+        console.log("Even")
+    }else {
+        console.log("Odd")
+    }
+}
+evenOdd(7)
 
-do {
-    factroal = factroal * noo;
-    noo++
-} while (noo <= numOf);
-console.log(factroal);
+
+let sq = (square) => {
+    return square * square;
+}
+console.log(sq(5))
+
+
+function concatstr(str1 , str2) {
+    return str1.concat(" " + str2);
+}
+console.log(concatstr("Ingale" , "Yash"))
+
+
+let sumfun1 = (no , no1) => {
+    return no + no1
+}
+console.log(sumfun1(5,6))
+
+let sumfun = (numm1 , numm2) => numm1 + numm2;
+console.log(sumfun(5 ,5))
+
+
+let high = function (fun , n ) {
+    for (i=0; i <n; i++) {
+        fun()
+    }
+}
+
+function timesss () {
+    console.log("Yash!!")
+}
+
+high(timesss , 5)
