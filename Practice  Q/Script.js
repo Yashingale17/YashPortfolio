@@ -501,92 +501,232 @@
 // console.log(findStr(strFind))
 
 
-let  product = (a ,b = 5) => {
-    return a * b;
-}
+// let  product = (a ,b = 5) => {
+//     return a * b;
+// }
 
-a = 5;
-console.log(product(a));
-
-
-const greet = (Name, age = 21) => {
-    return `hello how are you ${Name}`
-}
-Name = "Yash";
-console.log(greet(Name))
+// a = 5;
+// console.log(product(a));
 
 
-
-let  howNo = (func , n) =>  {
-    for(let i = 0; i <n ; i++) {
-        func();
-    }
-}
-
-function gree () {
-    console.log("Hello!!!");
-}
-howNo(gree , 3)
+// const greet = (Name, age = 21) => {
+//     return `hello how are you ${Name}`
+// }
+// Name = "Yash";
+// console.log(greet(Name))
 
 
 
-// Define the first function: doubles the value
-function double(x) {
-    return x * 2;
-}
+// let  howNo = (func , n) =>  {
+//     for(let i = 0; i <n ; i++) {
+//         func();
+//     }
+// }
 
-// Define the second function: squares the value
-function square(x) {
-    return x * x;
-}
-
-let highor = (fun1 , fun2 , Val) => {
-    let result = fun1(Val)
-    let result2 = fun2(result)
-    return result2
-}
-console.log(highor(double , square , 5))
+// function gree () {
+//     console.log("Hello!!!");
+// }
+// howNo(gree , 3)
 
 
-function evenOdd (num)  {
-    if (num % 2 === 0) {
-        console.log("Even")
-    }else {
-        console.log("Odd")
-    }
-}
-evenOdd(7)
+
+// // Define the first function: doubles the value
+// function double(x) {
+//     return x * 2;
+// }
+
+// // Define the second function: squares the value
+// function square(x) {
+//     return x * x;
+// }
+
+// let highor = (fun1 , fun2 , Val) => {
+//     let result = fun1(Val)
+//     let result2 = fun2(result)
+//     return result2
+// }
+// console.log(highor(double , square , 5))
 
 
-let sq = (square) => {
-    return square * square;
-}
-console.log(sq(5))
+// function evenOdd (num)  {
+//     if (num % 2 === 0) {
+//         console.log("Even")
+//     }else {
+//         console.log("Odd")
+//     }
+// }
+// evenOdd(7)
 
 
-function concatstr(str1 , str2) {
-    return str1.concat(" " + str2);
-}
-console.log(concatstr("Ingale" , "Yash"))
+// let sq = (square) => {
+//     return square * square;
+// }
+// console.log(sq(5))
 
 
-let sumfun1 = (no , no1) => {
-    return no + no1
-}
-console.log(sumfun1(5,6))
-
-let sumfun = (numm1 , numm2) => numm1 + numm2;
-console.log(sumfun(5 ,5))
+// function concatstr(str1 , str2) {
+//     return str1.concat(" " + str2);
+// }
+// console.log(concatstr("Ingale" , "Yash"))
 
 
-let high = function (fun , n ) {
-    for (i=0; i <n; i++) {
-        fun()
-    }
-}
+// let sumfun1 = (no , no1) => {
+//     return no + no1
+// }
+// console.log(sumfun1(5,6))
 
-function timesss () {
-    console.log("Yash!!")
-}
+// let sumfun = (numm1 , numm2) => numm1 + numm2;
+// console.log(sumfun(5 ,5))
 
-high(timesss , 5)
+
+// let high = function (fun , n ) {
+//     for (i=0; i <n; i++) {
+//         fun()
+//     }
+// }
+
+// function timesss () {
+//     console.log("Yash!!")
+// }
+
+// high(timesss , 5)
+
+
+// day 6 
+
+// Arrays 
+
+// let arr = [1,2,3,4,5]
+// console.log(arr)
+
+// console.log(arr[0])
+// console.log(arr[4])
+// arr.push(6)
+// console.log(arr)
+// console.log(arr.pop())
+// console.log(arr)
+// console.log(arr.shift())
+// console.log(arr)
+// console.log(arr.unshift(1))
+// console.log(arr)
+
+
+// let double = arr.map(function (num) {
+//     return num * 2 ;
+// })
+
+// console.log(double)
+
+
+
+// let newarr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
+
+// let filt = newarr.filter(function (filte) {
+//     return filte % 2 === 0 
+// })
+
+// console.log(filt)
+
+
+// let sumarr = [1,2,3,4,5];
+
+// let sum = sumarr.reduce(function (acc , cur) {
+//     return acc + cur;
+// // Initial Value: 0 (the sum starts at 0).
+// // First Element: 1 (0 + 1 = 1).
+// // Second Element: 2 (1 + 2 = 3).
+// // Third Element: 3 (3 + 3 = 6).
+// // Fourth Element: 4 (6 + 4 = 10).
+// // Fifth Element: 5 (10 + 5 = 15).
+// },0);
+
+// console.log(sum)
+
+// // two dimentional array is called as (Matrix) that is an array of an array 
+
+// let matrix = [
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9]
+// ]
+
+// console.log(matrix)
+// console.log(matrix[1])
+console.log(matrix[1][1])
+
+//////
+// let ite = ["Thor" , "Doctor-strange" , "Spider-Man" , "Black-widow"];
+// for (let i=0; i<ite.length; i++) {
+//     console.log(ite[i])
+// }
+// let forite = [1,2,3,4,5];
+
+// forite.forEach(forite => {
+//     console.log(forite -1)
+// });
+// in above two question we are iterationg over a element of an array bacically going on each element of doing somethig here we are just print that element one by one using for loop and foreach loop 
+
+
+// let arrpre = ["Thor" , "Wonda", "Hulk" , "Caption"];
+// console.log(arrpre)
+// arrpre.push('Iron-man')
+// console.log(arrpre)
+// arrpre.pop()
+// console.log(arrpre)
+// arrpre.shift()
+// console.log(arrpre)
+// arrpre.unshift("Iron-Man");
+// console.log(arrpre)
+
+
+// let mapp = [ 1,2,3,4,5,6];
+
+// let add = mapp.map(function (mapp) {
+//     return mapp * 2;
+// })
+// console.log(add)
+
+
+// let filterr = [1,2,3,4,5];
+
+// let str = filterr.filter(function (num) {
+//     return num % 2 === 0 ; 
+// })
+
+// console.log(str)
+
+// let red = [ 1,2,3];
+
+// let reducee = red.reduce(function (acc , cur) {
+//     return acc * cur
+// },1)
+
+// console.log(reducee)
+
+
+// let forr = [10,11,12,13,14,15];
+
+// for (i=0; i<forr.length; i++) {
+//     console.log(forr[i])
+// }
+// let foreachh = [1,2,3,4,5];
+// foreachh.forEach(fore => {
+//     let result =  fore * 2;
+//     console.log(result)
+// });
+
+
+// let twoD = [
+//     ["Thor" , "Loki"],
+//     ["Spider-Man" , "Iron-Man"],
+//     ["Black-widow" , "Hockeye"]
+// ]
+// console.log(twoD);
+// console.log(twoD[1].push("Ant-Man"));
+// console.log(twoD)
+// console.log(twoD[0].pop())
+// console.log(twoD)
+// console.log(twoD[0].unshift("Hulk"))
+// console.log(twoD)
+// console.log(twoD[0].shift())
+// console.log(twoD)
