@@ -652,7 +652,7 @@
 
 // console.log(matrix)
 // console.log(matrix[1])
-console.log(matrix[1][1])
+// console.log(matrix[1][1])
 
 //////
 // let ite = ["Thor" , "Doctor-strange" , "Spider-Man" , "Black-widow"];
