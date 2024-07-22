@@ -1,0 +1,69 @@
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    .Container-top {
+        flex-direction: row; /* Stack children horizontally on larger screens */
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .left-sec {
+        flex: 1;
+        margin-right: 2rem;
+    }
+
+    .right-sec {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-main {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .About-container {
+        flex-direction: row; /* Switch to horizontal layout */
+        justify-content: space-between; /* Space out items */
+        align-items: flex-start; /* Align items at the top */
+    }
+
+    .About-left,
+    .About-right {
+        width: 48%; /* Allow space for both items side by side */
+    }
+
+    .About-left {
+        margin-right: 2%; /* Add space between image and content */
+    }
+}
+
+@media (max-width: 651px) {
+    .Navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Navbar .Nav-links {
+        display: none; /* Hide navigation links by default */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .Navbar .Nav-links.active {
+        display: flex; /* Show links when menu is active */
+    }
+
+    .Navbar .Nav-links a {
+        padding: 1rem;
+        text-align: center;
+        border-bottom: 1px solid #444;
+        width: 100%;
+    }
+
+    .Mobile-menu-btn {
+        display: block; /* Show mobile menu button */
+    }
+}

@@ -13,24 +13,21 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style..css">
+    <link rel="stylesheet" href="media.css">
     <title>Yash Ingale Portfolio</title>
 </head>
 
 <body id="top">
     <header>
         <div class="header-container">
-            <nav>
-                <div class="nav-left">
-                    <p>Yash's Portfolio</p>
-                </div>
-                <div class="nav-right">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#project">Projects</a></li>
-                        <li><a href="#contact">Contact Me</a></li>
-                    </ul>
+            <nav class="Navbar">
+                <a href="#" class="Logo">Yash's Portfolio</a>
+                <button class="Mobile-menu-btn">☰</button>
+                <div class="Nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </nav>
         </div>
@@ -62,12 +59,14 @@
             <div class="About-container">
                 <div class="About-left"><img src="./images/front-end-developer.png" alt=""></div>
                 <div class="About-right">
-                    <p>Hi, I'm <strong>Yash Ingale</strong>, a front-end web developer. I love creating websites that are
+                    <p>Hi, I'm <strong>Yash Ingale</strong>, a front-end web developer. I love creating websites that
+                        are
                         both beautiful and easy to use. I have a strong foundation in HTML, CSS, and JavaScript, and I'm
                         currently learning React and Bootstrap.</p>
                     <p>As a recent graduate, I've worked on several projects that helped me develop my skills. I enjoy
                         solving problems and coming up with creative solutions to make websites work better.</p>
-                    <p>I'm excited to join a team where I can continue to grow and work on interesting projects. When I'm
+                    <p>I'm excited to join a team where I can continue to grow and work on interesting projects. When
+                        I'm
                         not coding, I like to learn about new design trends and work on personal projects.</p>
                     <p>Let's connect and build something great together!</p>
                 </div>
@@ -105,7 +104,8 @@
                 <div class="contact-link">
                     <div>
                         <i class="fa-brands fa-instagram"></i>
-                        <a class="link-title" href="https://www.instagram.com/_yash_17_sahil/" target="_blank">Instagram</a>
+                        <a class="link-title" href="https://www.instagram.com/_yash_17_sahil/"
+                            target="_blank">Instagram</a>
                     </div>
                     <div>
                         <i class="fa-brands fa-linkedin-in"></i>
@@ -123,7 +123,8 @@
                 </div>
                 <div class="main-container">
                     <div class="contact-container">
-                        <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit"
+                            method="POST">
                             <input type="hidden" name="access_key" value="14723e7f-93f9-4da3-9d3a-c1141bbfcd0c">
                             <label for="name">Full Name</label>
                             <input type="text" id="name" name="name" required>
@@ -183,41 +184,51 @@
                 });
             });
         });
-    
-        document.addEventListener('DOMContentLoaded', function() {
+
+        document.addEventListener('DOMContentLoaded', function () {
             const contactForm = document.getElementById('contactForm');
-    
-            contactForm.addEventListener('submit', function(event) {
+
+            contactForm.addEventListener('submit', function (event) {
                 event.preventDefault(); // Prevent default form submission
-    
+
                 // Fetch form data
                 const formData = new FormData(contactForm);
                 const name = formData.get('name');
                 const email = formData.get('email');
                 const message = formData.get('message');
-    
+
                 // Example using fetch API to submit form data to external service
                 fetch('https://api.web3forms.com/submit', {
                     method: 'POST',
                     body: formData
                 })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    console.log(data); // Log server response
-                    alert('Form submied successfully!'); // Example of a success message
-                    contactForm.reset(); // Reset form fields
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    alert('Error submitting form. Please try again.'); // Example of an error message
-                });
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log(data); // Log server response
+                        alert('Form submied successfully!'); // Example of a success message
+                        contactForm.reset(); // Reset form fields
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('Error submitting form. Please try again.'); // Example of an error message
+                    });
             });
         });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuButton = document.querySelector('.Mobile-menu-btn');
+            const navLinks = document.querySelector('.Nav-links');
+        
+            menuButton.addEventListener('click', function () {
+                navLinks.classList.toggle('active');
+            });
+        });
+        
     </script>
 </body>
 

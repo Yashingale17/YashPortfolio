@@ -4,21 +4,27 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #121212;
-    /* Dark theme background */
     color: #ffffff;
-    /* Text color */
     scroll-behavior: smooth;
-    /* Smooth scrolling */
+    overflow-x: hidden;
+    /* Prevent horizontal overflow */
+}
+
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Header Section */
 header {
-    background-color: #1f1f1f;
-    /* Darker background for the header */
-    padding: 1rem 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Slight shadow for depth */
-    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+    position: relative;
 }
 
 .header-container {
@@ -27,13 +33,27 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+    width: 100%;
+}
+
+.Navbar .Logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.Navbar .Nav-links {
+    display: flex;
+    gap: 1rem;
 }
 
 .nav-left p {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ff6347;
-    /* Highlight color */
 }
 
 .nav-right ul {
@@ -47,6 +67,14 @@ header {
     margin-left: 1.5rem;
 }
 
+.Navbar .Nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
 .nav-right ul li a {
     color: #ffffff;
     text-decoration: none;
@@ -54,7 +82,6 @@ header {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-    /* Smooth transitions */
 }
 
 .nav-right ul li a:hover {
@@ -62,21 +89,52 @@ header {
     color: #ffffff;
 }
 
+.Navbar .Nav-links a:hover {
+    background-color: #555;
+}
+
+.Mobile-menu-btn {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
 /* Home Section */
 .Container-top {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* Default to vertical stacking */
     align-items: center;
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
+    width: 100%;
+}
+
+.left-sec,
+.right-sec {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .left-sec {
     flex: 1;
     color: #d3d3d3;
-    /* Slightly lighter text for contrast */
     font-size: 2.5rem;
+}
+
+.right-sec .img-main {
+    width: 100%;
+    /* Ensure image takes full width of its container */
+    max-width: 450px;
+    /* Limit maximum width of the image */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
 
 .name-color {
@@ -102,9 +160,7 @@ header {
 .resume-btn:hover,
 .github-btn:hover {
     background-color: #e5533d;
-    /* Darker shade on hover */
     transform: scale(1.05);
-    /* Slightly larger on hover */
 }
 
 .right-sec .img-main {
@@ -117,7 +173,6 @@ header {
 
 .right-sec .img-main:hover {
     transform: scale(1.05);
-    /* Slight zoom on hover */
 }
 
 /* About Section */
@@ -127,30 +182,12 @@ header {
 }
 
 .Section-two>div {
-    margin-left: 100px;
     font-size: 20px;
-}
-
-.Section-three>div {
-    margin-left: 100px;
-    font-size: 20px;
-}
-
-.Section-four>div {
-    margin-left: 100px;
-    font-size: 20px;
-}
-
-.Section-five>div {
-    margin-left: 100px;
-    font-size: 20px;
-    margin-bottom: 6px;
 }
 
 .About-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column; /* Stack items vertically */
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -161,18 +198,23 @@ header {
     flex: 1;
     padding: 1rem;
 }
+.About-left,
+.About-right {
+    width: 100%;
+    box-sizing: border-box;
+}
 
 .About-left img {
     width: 100%;
+    /* Ensure image takes full width of its container */
     max-width: 400px;
+    /* Limit maximum width of the image */
+    height: auto;
+    /* Maintain aspect ratio */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
-}
 
-.About-left img:hover {
-    transform: scale(1.05);
-    /* Slight zoom on hover */
 }
 
 .About-right {
@@ -214,24 +256,19 @@ header {
     margin: 1rem;
 }
 
-.fa-html5 {
-    color: #e34c26;
-}
-
-.fa-css3-alt {
-    color: #264de4;
-}
-
-.fa-js {
-    color: #f0db4f;
-}
-
+.fa-html5,
+.fa-css3-alt,
+.fa-js,
 .fa-react {
-    color: #61dbfb;
+    font-size: 3.5rem;
 }
 
 .skill i {
-    font-size: 3.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill i:hover {
+    transform: translateY(-8px);
 }
 
 .Skill-title {
@@ -246,6 +283,7 @@ header {
     background-color: #1f1f1f;
 }
 
+/* Contact Section */
 /* Contact Section */
 .Section-five {
     padding: 2rem 1rem;
@@ -326,6 +364,37 @@ header {
     transform: scale(1.05);
 }
 
+/* Media query for screens 415px or narrower */
+@media (max-width: 415px) {
+    .contact-link {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .contact-link div {
+        flex: 1 1 100%; /* Full width for each item */
+        margin-bottom: 1rem; /* Add some space between items */
+    }
+}
+
+/* Media query for screens between 415px and 1200px */
+@media (min-width: 416px) and (max-width: 1200px) {
+    .contact-link {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    .contact-link div {
+        flex: 1 1 calc(50% - 1rem); /* Two columns with space between items */
+        margin-bottom: 1rem; /* Space between rows */
+        text-align: center;
+    }
+}
+
+
+
 /* Footer Section */
 footer {
     background-color: #1f1f1f;
@@ -353,4 +422,17 @@ footer {
 
 .footer-bottom {
     margin-top: 1rem;
+}
+
+/* Responsive adjustments for devices 419px and below */
+@media (max-width: 419px) {
+    .footer-content {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 1rem; /* Spacing between footer sections */
+        text-align: center; /* Center align text for better readability */
+    }
 }
